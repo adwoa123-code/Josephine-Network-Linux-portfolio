@@ -77,11 +77,15 @@ Though I was in a learning phase, this experience helped me sharpen my troublesh
 
 ##SCENARIO
 
+#NOTE BEST : **Ericsson Context**  
+ The commands and health checks shown here were executed on Ericsson-managed systems and customer nodes. These are *not* general-purpose Linux configurations, but specific to the support environment I was assigned to.
+
 AIRTEL Congo DRC_ Handover HC for New SDP23 and SDP24 
 
 #ISSUES DETECTED . BELOW IS MY REPORT ON  THE HEALTH CHECK ON THE NODES  TO THE TEAM WHO IS SUPPOSED TO WORK ON IT .
 
 - There are many active alarms with different severities. Clear the old alarms and check the current ones please.
+- 
 
 
 	[charles@pksdp10a home]$ sudo /opt/esa/bin/fmactivealarms
