@@ -77,18 +77,79 @@ Though I was in a learning phase, this experience helped me sharpen my troublesh
 
 ##SCENARIO
 
-#NOTE BEST : **Ericsson Context**  
+#NOTE BEST : "Ericsson Context"  
  The commands and health checks shown here were executed on Ericsson-managed systems and customer nodes. These are *not* general-purpose Linux configurations, but specific to the support environment I was assigned to.
 
-AIRTEL Congo DRC_ Handover HC for New SDP23 and SDP24 
+#Perform a Health Check on AIRTEL Congo DRC_ Handover HC for New SDP23 and SDP24 , 
 
-#ISSUES DETECTED . BELOW IS MY REPORT ON  THE HEALTH CHECK ON THE NODES  TO THE TEAM WHO IS SUPPOSED TO WORK ON IT .
+Below is my solution or the steps taken as a support engineer ;
+
+##  Pre-Health Check Process – What Happens Before the Report is Sent
+
+Before submitting a health check report, a Support Engineer follows a structured process to ensure the system’s health is thoroughly evaluated and the report reflects accurate and actionable insights. Below is a breakdown of the standard steps:
+
+### 1. System Access & Initial Verification
+- Log into the system or node (e.g., via SSH).
+- Confirm system availability and verify that all necessary services are up and running.
+- Validate system responsiveness and basic connectivity.
+
+### 2.  Data Collection
+- Run predefined scripts or commands to gather system health metrics such as:
+  - CPU, memory, and disk utilization
+  - Node uptime and load
+  - Active alarms or faults
+  - Software/firmware version
+  - Network interface and traffic stats
+- "Example command (Ericsson-specific):"
+  ```bash
+  sudo /opt/esa/bin/fmactivealarms
+
+
+3. Data Analysis 
+-Examine collected data for abnormalities or threshold violations.
+-Pay attention to:
+Critical or major alarms
+Performance degradation
+Irregular system behaviors or patterns
+
+4.  Configuration Validation
+Check for any configuration mismatches or unauthorized changes.
+
+Ensure the system aligns with baseline or standard configurations.
+
+5.  Documentation of Findings
+Summarize observations in a structured format.
+
+Record current system state, performance indicators, and detected issues.
+
+6. Internal Review or Escalation (if needed)
+If critical issues are identified, escalate to relevant teams or vendor support.
+
+In some cases, findings may undergo peer review before formal reporting.
+
+7. Report Preparation
+Compile findings into a professional report.
+
+Include:
+Summary and detailed findings
+Screenshots, logs, or graphs (if applicable)
+Recommendations or action points
+
+8.  Submission
+Share the final report with the supervisor, client.
+
+Optionally, we  initiate follow-up actions based on the report’s recommendations.
+
+
+#BELOW IS A HEALTH CHECK I DID ON A CUSTOMER NODE ;
+
+NODE NAME : pksdp10a 
+Linux user i am logged in as :Charles 
+
 
 - There are many active alarms with different severities. Clear the old alarms and check the current ones please.
 - 
-
-
-	[charles@pksdp10a home]$ sudo /opt/esa/bin/fmactivealarms
+         [charles@pksdp10a home]$ sudo /opt/esa/bin/fmactivealarms
 	Active alarms:
 	!---------------------------------------------------------------
 	Module             : SystemResources
