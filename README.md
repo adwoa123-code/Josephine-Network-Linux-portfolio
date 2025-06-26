@@ -75,11 +75,12 @@ Though I was in a learning phase, this experience helped me sharpen my troublesh
 - **WinSCP** – Used to securely transfer log files, configuration snapshots, or reports between local and remote systems.
 - **Ivanti Secure Access Client** – Provided VPN connectivity and secure remote access to Ericsson's internal support tools and customer infrastructure.
 
+
+
+ ⚠️ **Disclaimer**: The commands and examples provided in this repository are **Ericsson-specific** and were executed within an Ericsson-managed support environment. These are *not* generic Linux configurations, but tailored to the systems and customer nodes I worked with during my role as a Support Engineer.  
+ No sensitive or confidential information is shared. This is strictly for **educational and demonstration purposes**.
+
 ##SCENARIO
-
-#NOTE BEST : "Ericsson Context"  
- The commands and health checks shown here were executed on Ericsson-managed systems and customer nodes. These are *not* general-purpose Linux configurations, but specific to the support environment I was assigned to.
-
 #Perform a Health Check on AIRTEL Congo DRC_ Handover HC for New SDP23 and SDP24 , 
 
 Below is my solution or the steps taken as a support engineer ;
